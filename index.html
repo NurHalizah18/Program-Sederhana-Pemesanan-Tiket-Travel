@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Tiket Travel | Nur Halizah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <from>
+        <h4>PEMESANAN TIKET TRAVEL</h4>
+        <table>
+            <tr>
+                <td><label>NAMA</label></td>
+                <td>: <input type="text" id="inp_nama" name=""></td>
+            </tr>
+            <tr>
+                <td><label>TUJUAN</label></td>
+                <td>: <select onchange="Tujuan()" id="inp_tujuan">
+                    <option>--- Pilih Tujuan ---</option><br>
+                    <option value="bdg">Bandung</option>
+                    <option value="jkt">Jakarta</option>
+                    <option value="ygk">Yogyakarta</option>
+                    <option value="bl">Bali</option>
+                    <option value="mdn">Medan</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label>HARGA TIKET</label></td>
+                <td>: <input type="text" id="inp_nama" name=""></td>
+            </tr>
+            <tr>
+                <td><label>JUMLAH TIKET</label></td>
+                <td>: <select onchange="Jumlah()" id="inp_jumlah">
+                    <option>-- Pilih Jumlah Tiket --</option><br>
+                    <option value="satu">1</option>
+                    <option value="dua">2</option>
+                    <option value="tiga">3</option>
+                    <option value="empat">4</option>
+                    <option value="lima">5</option>
+                    <option value="enam">6</option>
+                    <option value="tujuh">7</option>
+                    <option value="delapn">8</option>
+                    <option value="sembilan">9</option>
+                    <option value="sepuluh">10</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="member">MEMBER</label></td>
+                <td>: <input type="checkbox"></td>
+            </tr>            
+            <tr>
+                <td><label>DISKON</label></td>
+                <td>: <input type="text" id="inp_diskon"></td>
+            </tr>
+            <tr>
+                <td><label>TOTAL</label></td>
+                <td>: <input type="text" id="inp_total" name=""></td>
+            </tr>
+        </table>
+        <input type="button" value="PESAN" onclick="pesan()" name="">
+    </from>
+    <script src="script.js"></script>
+</body>
+</html>
